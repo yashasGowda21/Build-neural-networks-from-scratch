@@ -28,7 +28,7 @@ print ("test_set_x shape: " + str(test_set_x_orig.shape))
 print ("test_set_y shape: " + str(test_set_y.shape))
 
 # Reshape the training and test data sets so that images of size (num_px, num_px, 3) 
-# are flattened into single vectors of shape (num_px $*$ num_px $*$ 3, 1)
+# are flattened into single vectors of shape (num_px * num_px * 3, 1)
 
 # X_flatten = X.reshape(X.shape[0], -1).T (X.T is the transpose of X)
 
