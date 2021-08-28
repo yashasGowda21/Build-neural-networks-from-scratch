@@ -111,7 +111,6 @@ def propagate(w, b, X, Y):
     # compute cost                               
     cost = -1/m*(np.sum(Y*np.log(A) + (1-Y)*np.log(1-A)))                                
 
-    
     # BACKWARD PROPAGATION (TO FIND GRAD)
     dw = 1/m*(np.dot(X, ((A-Y).T)))
     db = 1/m*(np.sum(A-Y))
